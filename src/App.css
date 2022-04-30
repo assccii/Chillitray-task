@@ -1,0 +1,14 @@
+.App {
+
+}
+
+.in-row {
+    display: flex;
+    flex-direction: row;
+    margin : 5px 5px 5px 5px;
+}
+
+.in-column {
+    display: flex;
+    flex-direction: column;
+}
