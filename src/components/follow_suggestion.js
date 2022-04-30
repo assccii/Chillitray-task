@@ -1,80 +1,51 @@
 import React from "react"
-import topicData from "./topics.js"
-import trendsData from "./trends.js"
+import {topic} from "./topics"
+import {trends} from "./trends"
 
 
 
 export default function FollowSuggestion() {
+
+    const recent = topic.map(
+        (info) => {
+            return (
+                <li>
+                    <img src = "" alt = "" />
+                    {info.name}
+                    <p className = "category">{info.category}</p>
+                </li>
+            );
+        }
+    )
+
+    const displayTrend = trends.map(
+        (info) => {
+            return (
+                <li>
+                    <img src = "#" alt = "" />
+                    {info.name}
+                    {info.trending === "true" && <img src = "#" />}
+                </li>
+            );
+        }
+    )
+
     return (
         <div className="follow-suggestion">
            <div className="recent-searches">
                 <h2 className="recent-searches-text">Recent Searches</h2>
                 <ul>
-                    <li>
-                        <img src = "#" alt = " "/>
-                        UX Design 
-                    </li>
-
-                    <li>
-                        <img src = "#" alt = " "/>
-                        Marketing
-                    </li>
-
-                    <li>
-                        <img src = "#" alt = " "/>
-                        Expansion
-                    </li>
-
-                    <li>
-                        <img src = "#" alt = " "/>
-                        Technology
-                    </li>
+                    {displayTrend}
                 </ul>
+
            </div>
 
            <div className="topics-to-follow">
-               <h3>Topics to Follow</h3>
-
+               <h2 className="topics-to-follow-text">Topics to Follow</h2>
                <ul>
-                   <li>
-                        UX Design
-                        <img src = "#" alt = " " className="follow-icon"/>
-                        <img src = "#" alt = "" className="cross-icon"/>
-                    </li>
-
-                    <li>
-                        UX Design
-                        <img src = "#" alt = " " className="follow-icon"/>
-                        <img src = "#" alt = "" className="cross-icon"/>
-                    </li>
-
-                    <li>
-                        UX Design
-                        <img src = "#" alt = " " className="follow-icon"/>
-                        <img src = "#" alt = "" className="cross-icon"/>
-                    </li>
-
-                    <li>
-                        UX Design
-                        <img src = "#" alt = " " className="follow-icon"/>
-                        <img src = "#" alt = "" className="cross-icon"/>
-                    </li>
-
-                    <li>
-                        UX Design
-                        <img src = "#" alt = " " className="follow-icon"/>
-                        <img src = "#" alt = "" className="cross-icon"/>
-                    </li>
-
-                    <li>
-                        UX Design
-                        <img src = "#" alt = " " className="follow-icon"/>
-                        <img src = "#" alt = "" className="cross-icon"/>
-                    </li>
-                   
-               </ul>
+                    {recent}
+                </ul>
            </div>
         </div>
-    )
-
+    );
 }
