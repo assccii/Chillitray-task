@@ -1,7 +1,12 @@
 .App {
-
+    display: flex;
+    flex-direction: row;
 }
 
+
+.Sidebar {
+    background-color: #5D5FEF;
+}
 .in-row {
     display: flex;
     flex-direction: row;
@@ -17,31 +22,41 @@
 /* style for sidebar */
 
 .sidebar {
-    /* position: absolute;
+    position: absolute;
     width: 243px;
     height: 716px;
     left: 0px;
-    top: 132px; */
+    top: 132px;    
 }
 li {
     list-style: none;
+    margin-top : 27px;
+    left: 79px;
+    height : 18px;
+    font-family: 'Inter';
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    color : #2A373F;
+    padding-bottom: 5px;
+}
+li > img {
+    padding-right: 5px;
+    padding-left: 3px;
 }
 .first {
-    position: absolute;
-    width: 85px;
-    height: 18px;
-    left: 79px;
-    top: 148px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-
-    /* Iris/100 */
-
+    text-align: left;
+    left : 79px;
+    height : 20px;
     color: #5D5FEF;
+
+    background: #F5F5FE;
+    border-radius: 0px 37px 37px 0px;
 }
 
 
@@ -49,6 +64,12 @@ li {
 
 
 /* css for main section */
+
+.card-image {
+    float : right;
+    width : 100px;
+    height : 100px;
+}
 
 .flex-row {
     display: flex;
