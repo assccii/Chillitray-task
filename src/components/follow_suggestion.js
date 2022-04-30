@@ -1,4 +1,8 @@
 import React from "react"
+import topicData from "./topics.js"
+import trendsData from "./trends.js"
+
+
 
 export default function FollowSuggestion() {
     return (
@@ -26,6 +30,49 @@ export default function FollowSuggestion() {
                         Technology
                     </li>
                 </ul>
+           </div>
+
+           <div className="topics-to-follow">
+               <h3>Topics to Follow</h3>
+
+               <ul>
+                   <li>
+                        UX Design
+                        <img src = "#" alt = " " className="follow-icon"/>
+                        <img src = "#" alt = "" className="cross-icon"/>
+                    </li>
+
+                    <li>
+                        UX Design
+                        <img src = "#" alt = " " className="follow-icon"/>
+                        <img src = "#" alt = "" className="cross-icon"/>
+                    </li>
+
+                    <li>
+                        UX Design
+                        <img src = "#" alt = " " className="follow-icon"/>
+                        <img src = "#" alt = "" className="cross-icon"/>
+                    </li>
+
+                    <li>
+                        UX Design
+                        <img src = "#" alt = " " className="follow-icon"/>
+                        <img src = "#" alt = "" className="cross-icon"/>
+                    </li>
+
+                    <li>
+                        UX Design
+                        <img src = "#" alt = " " className="follow-icon"/>
+                        <img src = "#" alt = "" className="cross-icon"/>
+                    </li>
+
+                    <li>
+                        UX Design
+                        <img src = "#" alt = " " className="follow-icon"/>
+                        <img src = "#" alt = "" className="cross-icon"/>
+                    </li>
+                   
+               </ul>
            </div>
         </div>
     )

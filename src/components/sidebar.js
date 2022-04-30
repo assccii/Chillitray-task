@@ -9,7 +9,8 @@ export default function Sidebar() {
                         <img src="#" alt = ""/>
                           Hot Scopes
                     </li>
-                    <li><img src="#" alt = ""/>
+                    <li>
+                        <img src="#" alt = ""/>
                         Earnings
                     </li>
                     <li>
@@ -33,31 +34,31 @@ export default function Sidebar() {
             <div className="list2">
                 <ul>
                     <li>
-                        <img url="#" alt = ""/>
+                        <img src="#" alt = ""/>
                         Analytics & Reporting
                     </li>
                     <li>
-                        <img url="#" alt = ""/>
+                        <img src="#" alt = ""/>
                         Budgeting & Planning
                     </li>
                     <li>
-                    <img url="#" alt = ""/>
+                    <img src="#" alt = ""/>
                         Communications
                     </li>
                     <li>
-                    <img url="#" alt = ""/>
+                    <img src="#" alt = ""/>
                         Technology
                     </li>
                     <li>
-                    <img url="#" alt = ""/>
+                    <img src="#" alt = ""/>
                         Legal
                     </li>
                     <li>
-                        <img url="#" alt = ""/>
+                        <img src="#" alt = ""/>
                         Infrastructure
                     </li>
                     <li>
-                        <img url="#" alt = ""/>
+                        <img src="#" alt = ""/>
                         Marketing
                     </li>
                     
