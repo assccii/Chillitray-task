@@ -6,9 +6,10 @@ import Main from './components/main';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <div className="in-row">
+    <div className='in-col'>
+      {/* <Header /> */}
+
+      <div className="App">
         <Sidebar />
         <Main />
         <FollowSuggestion />
