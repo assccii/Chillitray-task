@@ -1,7 +1,6 @@
 import './App.css';
 import Header from './components/header';
 import FollowSuggestion from './components/follow_suggestion';
-import Recent from './components/recent';
 import Sidebar from './components/sidebar';
 import Main from './components/main';
 
@@ -12,10 +11,7 @@ function App() {
       <div className="in-row">
         <Sidebar />
         <Main />
-        <div className="in-column">
-          <Recent />
-          <FollowSuggestion />
-        </div>
+        <FollowSuggestion />
       </div>
     </div>
   );

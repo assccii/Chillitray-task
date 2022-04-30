@@ -31,6 +31,7 @@ export default function Sidebar() {
                     </li>
                 </ul>
             </div>
+            <hr></hr>
             <div className="list2">
                 <ul>
                     <li>
