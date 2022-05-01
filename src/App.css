@@ -348,8 +348,39 @@ hr {
 
 }
 
+.card-options {
+    display: flex;
+    flex-direction: row;
+}
 
+.like, .share, .read-later {
+    height : 25px;
+    width : 25px;
+}
 
+.blue {
+    width: 150px;
+    height: 22px;
+    left: 574.95px;
+    top: 651px;
+
+    margin-top : 3px;
+    margin-bottom: 5px;
+    padding-left : 15px;
+
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    /* identical to box height, or 183% */
+    
+    
+    /* Iris/100 */
+    
+    color: #5D5FEF;    
+}
 
 
 

@@ -4,6 +4,7 @@ import {trends} from "./trends"
 import search from "../images/search.png"
 import trending from "../images/trending.png"
 
+
 export default function FollowSuggestion() {
 
     const recent = topic.map(
