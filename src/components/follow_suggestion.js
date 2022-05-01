@@ -25,7 +25,7 @@ export default function FollowSuggestion() {
                 <li>
                     <img src = {search} alt = "" />
                     {info.name}
-                    {info.trending === "true" && <img src = {trending} className="recent-image"/>}
+                    {info.trending === "true" && <img src = {trending} className="recent-image" alt = ""/>}
                     <hr />
                 </li>
             );
