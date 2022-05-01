@@ -21,22 +21,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* css for header */
 
 .header {
@@ -182,19 +166,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* style for sidebar */
 
 .sidebar {
@@ -262,10 +233,10 @@ hr {
 
 }
 .card-image {
-    clear : right;
     float : right;
-    width : 100px;
-    height : 100px;
+    width : 200px;
+    height : 200px;
+    margin-bottom: 15px;
 }
 
 .flex-row {
@@ -292,6 +263,7 @@ hr {
 }
 
 .category-selected {
+    text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -312,9 +284,11 @@ hr {
     padding: 6px 16px;
     margin-left : 10px;
     margin-right : 15px;
-    background: #cacdba;
+    background: #f4f5f0;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
     border-radius: 20px;
+    border : 2px solid white;
+    box-shadow: #707D85;
 }
 
 .mob-card {
@@ -322,7 +296,7 @@ hr {
     flex-direction: column;
     position: absolute;
     width: 771px;
-    height: 223px;
+    height: 250px;
     left: 343px;
     top: 241px;
 
@@ -382,13 +356,6 @@ hr {
     
     color: #5D5FEF;    
 }
-
-
-
-
-
-
-
 
 
 

@@ -5,16 +5,16 @@ import like from "../images/like.png"
 import share from "../images/share.png"
 import read_later from "../images/read_later.png"
 
-
 export default function Main() {
 
     const one_card = cards.map(
         (info) => {
             return (
                 <div className="card">
-                    <img src = {info.image} alt = "" className="card-image" />
                     <p>hot scoops</p>
+                    <img src = {info.image} alt = "" className="card-image" />
                     <h3>{info.heading}</h3>
+
                     <p>{info.description}</p>
 
                     <div className="card-options">
@@ -26,6 +26,7 @@ export default function Main() {
 
                         <img src = {read_later} alt = "" className="read-later" />
                         <p className = "blue">Read Later</p>
+                        <p className="blue">[Source]</p>
                     </div>
                 </div>
             );
