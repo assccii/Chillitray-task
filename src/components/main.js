@@ -36,7 +36,7 @@ export default function Main() {
     return (
         <div className="main">
             <h3 className="main-text">Top Stories for you </h3>
-            <ul className="flex-row">
+            <ul className="flex-row categories">
                 <li className = "category-selected">All</li>
                 <li>Finance</li>
                 <li>Business</li>

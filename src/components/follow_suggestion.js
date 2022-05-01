@@ -3,17 +3,23 @@ import {topic} from "./topics"
 import {trends} from "./trends"
 import search from "../images/search.png"
 import trending from "../images/trending.png"
-
+import cross from "../images/cross.png"
 
 export default function FollowSuggestion() {
 
-    const recent = topic.map(
+    const follow = topic.map(
         (info) => {
             return (
                 <li>
-                    <img src = {search} alt = ""  className = "recent-image" />
-                    <h3 className="topic">{info.name}</h3>
-                    <p className = "category">{info.category}</p>
+                    <div className="follow-flex-row">
+                        <div className="follow-flex-column">
+                            {/* <img src = {search} alt = ""  className = "follow-image" /> */}
+                            <h3 className="topic">{info.name}</h3>
+                            <p className = "category">{info.category}</p>
+                        </div>
+                        <p className = "follow-text">follow</p>
+                        <img src = {cross} alt = "" className="cross" />
+                    </div>
                     <hr />
                 </li>
             );
@@ -46,7 +52,7 @@ export default function FollowSuggestion() {
            <div className="topics-to-follow">
                <h2 className="topics-to-follow-text">Topics to Follow</h2>
                <ul>
-                    {recent}
+                    {follow}
                 </ul>
            </div>
         </div>

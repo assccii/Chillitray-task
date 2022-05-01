@@ -262,6 +262,7 @@ hr {
 
 }
 .card-image {
+    clear : right;
     float : right;
     width : 100px;
     height : 100px;
@@ -307,10 +308,10 @@ hr {
     border-radius: 20px;
 }
 
-
 .flex-row > li {
     padding: 6px 16px;
-
+    margin-left : 10px;
+    margin-right : 15px;
     background: #cacdba;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
     border-radius: 20px;
@@ -423,7 +424,13 @@ hr {
 }
 
 .recent-image {
-    padding-left : 90px;
+    float : right;
+    padding-right : 5px;
+
+}
+.follow-image {
+    float : left;
+    padding-right : 5px;
 }
 
 .topics-to-follow {
@@ -447,12 +454,9 @@ hr {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    line-height: 20px;
-    padding-bottom: 0px;
+    margin-right : 5px;
+    margin-bottom: 5px;
     /* identical to box height, or 133% */
-
-    display: flex;
-    align-items: center;
 
     /* Dark */
 
@@ -482,4 +486,40 @@ hr {
     order: 0;
     flex-grow: 0;
     margin: 0px 10px;
+}
+
+.follow-flex-row {
+    display: flex;
+    flex-direction: row;
+    height : 50px;
+}
+
+.follow-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 96.39px;
+    height: 32px;
+    left: 200px;
+    background-color: #f3fbfc;
+    border-radius: 20px;
+    border: 2px solid rgb(93, 203, 247);
+}
+
+.cross {
+    height : 20px;
+    width : 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-left : 5px;
+    margin-top : 25px;
+    position: absolute;
+    left: 300px;
 }
