@@ -1,8 +1,8 @@
 import React from "react"
 import {topic} from "./topics"
 import {trends} from "./trends"
-
-
+import search from "../images/search.png"
+import trending from "../images/trending.png"
 
 export default function FollowSuggestion() {
 
@@ -10,9 +10,10 @@ export default function FollowSuggestion() {
         (info) => {
             return (
                 <li>
-                    <img src = "" alt = "" />
-                    {info.name}
+                    <img src = {search} alt = ""  className = "recent-image" />
+                    <h3 className="topic">{info.name}</h3>
                     <p className = "category">{info.category}</p>
+                    <hr />
                 </li>
             );
         }
@@ -22,9 +23,10 @@ export default function FollowSuggestion() {
         (info) => {
             return (
                 <li>
-                    <img src = "#" alt = "" />
+                    <img src = {search} alt = "" />
                     {info.name}
-                    {info.trending === "true" && <img src = "#" />}
+                    {info.trending === "true" && <img src = {trending} className="recent-image"/>}
+                    <hr />
                 </li>
             );
         }

@@ -7,7 +7,7 @@ export default function Main() {
         (info) => {
             return (
                 <div className="card">
-                    <img src = {`../images/${info.image}`} alt = "" className="card-image" />
+                    <img src = {info.image} alt = "" className="card-image" />
                     <p>hot scoops</p>
                     <h3>{info.heading}</h3>
                     <p>{info.description}</p>
@@ -19,7 +19,7 @@ export default function Main() {
     
     return (
         <div className="main">
-            <h3>Top Stories for you </h3>
+            <h3 className="main-text">Top Stories for you </h3>
             <ul className="flex-row">
                 <li className = "category-selected">All</li>
                 <li>Finance</li>
@@ -29,7 +29,7 @@ export default function Main() {
                 <li>Company</li>
             </ul>
 
-            <div className = "flex-col">
+            <div className = "mob-card">
                 {one_card}
             </div>
 

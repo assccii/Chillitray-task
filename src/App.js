@@ -7,7 +7,9 @@ import Main from './components/main';
 function App() {
   return (
     <div className='in-col'>
-      {/* <Header /> */}
+      <Header 
+        progress = "70"
+      />
 
       <div className="App">
         <Sidebar />

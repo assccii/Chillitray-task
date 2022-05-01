@@ -21,7 +21,7 @@ Sidebar {
   top: 132px;
 }
 
-Main {
+.Main {
   background-color: aqua;
   position: absolute;
   /* width: 771px;
