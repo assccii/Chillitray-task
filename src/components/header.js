@@ -2,6 +2,7 @@ import React from "react"
 import logo from "../images/logo.png"
 import search from "../images/search.png"
 import ProgressBar from "../components/progress.js"
+import credits from "../images/credits.png"
 export default function Header(props) {
     return (
         <div className="header">
@@ -18,6 +19,10 @@ export default function Header(props) {
                     <img src={search} alt = "" />
                 </button>
             </form>
+            <div className="credits">
+                <img src = {credits} alt = "" className="credits-image" />
+                <p className="credits-text">Credits</p>
+            </div>
             <ProgressBar key='1' bgcolor= "#ef6c00" completed= "70" className="progress" />
 
             <p className="login">Login</p>
